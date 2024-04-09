@@ -1,49 +1,54 @@
-body {
+body, html {
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
 }
 
-.progress-tracker {
-    max-width: 100%;
-    margin: 0;
-    padding: 0;
+.progress-tracker {  
     background-color: #fff;
     border-radius: 0;
-}
-
-h1, h2 {
-    text-align: center;
-    color: #333;
-}
-
-.sections-list {
     display: flex;
     flex-direction: column;
-    align-items: stretch;
+}
+
+.word-count {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
     padding: 0;
     margin: 0;
 }
 
-.sections-list li {
-    list-style-type: none;
-    margin: 0;
+.sections-progress {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
     padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.sections-list, .word-count-boxes {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
 }
 
 input[type="checkbox"] {
     display: none;
+    margin: 0;
+    padding: 0;
 }
 
 input[type="checkbox"] + label {
     display: block;
     cursor: pointer;
-    padding: 2px;
+    padding: 4px;
     border: 2px solid rgb(177, 156, 217);
     border-radius: 5px;
     background-color: rgb(230, 230, 250);
-    width: 100%;
     text-align: center;
+    height: 7.6%;
 }
 
 input[type="checkbox"]:checked + label {
@@ -51,29 +56,13 @@ input[type="checkbox"]:checked + label {
     color: white;
 }
 
-.word-count-boxes {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0;
-}
-
 .word-box-row {
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 0;
+    justify-content: center;
+    margin: 0 auto;
     width: 100%;
 }
 
-.word-box-row input[type="checkbox"],
 .word-box-row label {
-    width: calc(25%);
-    margin: 0;
-    padding: 0;
-}
-
-@media only screen and (max-width: 480px) {
-    .word-box-row input[type="checkbox"] + label {
-        width: calc(50%);
-    }
+    width: 25%;
 }
