@@ -1,5 +1,5 @@
 html, body {
-    font-family: "Comic Sans MS", cursive;
+    font-family: "Times New Roman", Times, serif;
     margin: 0;
     background-color: #050A30;
 }
@@ -12,10 +12,10 @@ html, body {
 }
 
 .banner h1 {
-    font-family: "Comic Sans MS", cursive;
+    font-family: "Times New Roman", Times, serif;
     margin: 0;
-    width: 100%; /* Ensures the h1 spans the entire width */
-    font-size: 50px !important; /* Adjust font size as needed */
+    width: 100%; 
+    font-size: 50px 
 }
 
 .progress-tracker {  
