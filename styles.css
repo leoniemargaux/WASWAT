@@ -1,5 +1,5 @@
 html, body {
-    ffont-family: "Times New Roman", Times, serif;
+    font-family: Arial, sans-serif;
     margin: 0;
 }
 
@@ -19,16 +19,7 @@ html, body {
     margin: 0;
 }
 
-.sections-progress {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly; 
-    padding: 0;
-    margin: 0;
-    width: 100%;
-}
-
-.sections-list, .word-count-boxes {
+.word-count-boxes {
     display: flex;
     flex-direction: column;
     padding: 0;
@@ -44,15 +35,15 @@ input[type="checkbox"] {
 input[type="checkbox"] + label {
     display: block;
     cursor: pointer;
-    padding: 18px; 
+    padding: 12px; 
     border: 2px solid rgb(177, 156, 217);
     border-radius: 5px;
-    background-color: rgb(230, 230, 250);
+    background-image: url('sad.png');
     text-align: center;
 }
 
 input[type="checkbox"]:checked + label {
-    background-color: rgb(177, 156, 217);
+    background-image: url('happy.png');
     color: white;
 }
 
@@ -64,5 +55,12 @@ input[type="checkbox"]:checked + label {
 }
 
 .word-box-row label {
-    width: 25%;
+    width: 180px; /* Adjust width to match image */
+    height: 180px; /* Adjust height to match image */
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    padding: 0; /* Remove padding */
+    margin: 5px; /* Add margin for spacing */
+    border: none; /* Remove border */
 }
