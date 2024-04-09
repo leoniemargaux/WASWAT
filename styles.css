@@ -36,7 +36,6 @@ input[type="checkbox"] + label {
     display: block;
     cursor: pointer;
     padding: 12px; 
-    border: 2px solid rgb(177, 156, 217);
     border-radius: 5px;
     background-image: url('sad.png');
     text-align: center;
@@ -55,12 +54,12 @@ input[type="checkbox"]:checked + label {
 }
 
 .word-box-row label {
-    width: 98px; 
-    height: 98px; 
+    width: 24%;
+    aspect-ratio: 1/1;
     background-size: cover;
     background-position: center;
     cursor: pointer;
     padding: 0; 
-    margin: 5px; 
+    margin: 1%; 
     border: none; 
 }
