@@ -55,12 +55,12 @@ input[type="checkbox"]:checked + label {
 }
 
 .word-box-row label {
-    width: 180px; /* Adjust width to match image */
-    height: 180px; /* Adjust height to match image */
+    width: 98px; 
+    height: 98px; 
     background-size: cover;
     background-position: center;
     cursor: pointer;
-    padding: 0; /* Remove padding */
-    margin: 5px; /* Add margin for spacing */
-    border: none; /* Remove border */
+    padding: 0; 
+    margin: 5px; 
+    border: none; 
 }
