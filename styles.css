@@ -1,16 +1,20 @@
-body, html {
+html, body {
     font-family: Arial, sans-serif;
     margin: 0;
+    height: 100%; 
 }
 
 .progress-tracker {  
+    min-height: 100%;
     background-color: #fff;
     border-radius: 0;
     display: flex;
     flex-direction: column;
+    height: 100%; 
 }
 
 .word-count {
+    flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center; 
@@ -19,6 +23,7 @@ body, html {
 }
 
 .sections-progress {
+    flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center; 
@@ -43,12 +48,12 @@ input[type="checkbox"] {
 input[type="checkbox"] + label {
     display: block;
     cursor: pointer;
-    padding: 10px;
+    padding: 11px; 
     border: 2px solid rgb(177, 156, 217);
     border-radius: 5px;
     background-color: rgb(230, 230, 250);
     text-align: center;
-    height: 7.6%;
+    margin-bottom: 0px; 
 }
 
 input[type="checkbox"]:checked + label {
@@ -65,4 +70,5 @@ input[type="checkbox"]:checked + label {
 
 .word-box-row label {
     width: 25%;
+    margin-bottom: 0px; 
 }
