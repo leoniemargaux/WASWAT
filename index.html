@@ -60,5 +60,26 @@
             </div>
         </div>
     </div>
+    <script>
+        // Retrieve the checked state from localStorage and update checkboxes
+        document.addEventListener('DOMContentLoaded', function() {
+            const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+            checkboxes.forEach(function(checkbox) {
+                const checkboxId = checkbox.getAttribute('id');
+                const checked = localStorage.getItem(checkboxId) === 'true';
+                checkbox.checked = checked;
+            });
+
+            // Update localStorage when checkboxes are clicked
+            checkboxes.forEach(function(checkbox) {
+                checkbox.addEventListener('change', function() {
+                    const checkboxId = checkbox.getAttribute('id');
+                    localStorage.setItem(checkboxId, checkbox.checked);
+                });
+            });
+        });
+    </script>
+</body>
+</html>
 </body>
 </html>
